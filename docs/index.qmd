@@ -1,1 +1,32 @@
+---
+title: "Capstone Project - Paper Consumption Survey"
+author: "Ella Haechler"
+date: today
+format:
+  html:
+    embed-resources: true
+    toc: true
+execute:
+  warning: false
+editor_options: 
+  chunk_output_type: console
+editor: visual
+---
 
+# Introduction
+
+An anonymous survey was designed to analyze the paper usage patterns of ETH Zurich students, providing insights that may inform future sustainability initiatives on campus. ETH Zurich has more than 20,000 students that are currently enrolled across bachelor’s and master’s programs. As paper consumption remains a relevant topic in the context of sustainability and resource management.
+
+```{r}
+# test
+```
+
+# Methods
+
+The survey, created using Google Forms, consists of sixteen questions and specifically targets students currently pursuing bachelor’s or master’s degrees at ETH Zurich. A total of 30 responses were collected.
+
+# Results
+
+# Conclusions
+
+# References
