@@ -81,51 +81,98 @@ Data for this study was collected through a survey designed using Google Forms, 
 
 # Results
 
-```{r}
-#| label: paper consumption overview
-#| tbl-cap: "xxx"
+In the following @tbl-paper-consumption-overview-degree an overview about the basic information collected in the survey is given.
 
-paper_summarize <- paper |>
+```{r}
+#| label: tbl-paper-consumption-overview-degree
+#| tbl-cap: "Printing habits of Bachelor's and Master's students"
+#| echo: false #(results shown, code not)
+
+paper |>
+  group_by(degree) |>
   summarise(
-    count = n(),
-    mean = mean(printing_amount),
-    sd = sd(printing_amount),
-    median = median(printing_amout),
-    min = min(printing_amount),
-    max = max(printing_amount)
-)
+    Mean = mean(printing_amount, na.rm = TRUE),
+    sd = sd(printing_amount, na.rm = TRUE),
+    Median = median(printing_amount, na.rm = TRUE),
+    Min = min(printing_amount, na.rm = TRUE),
+    Max = max(printing_amount, na.rm = TRUE),
+    n = n()
+  ) |>
+  ungroup() %>%
+  gt() |> 
+  fmt_number(columns = c(Mean, sd, Median, Min, Max),
+             decimals = 0) |>
+  tab_style(
+    style = cell_text(weight = "bold"),
+    locations = cells_column_labels(everything())
+  )
+
+```
+
+@fig-paper-1 shows ...
+
+```{r}
+#| label: fig-paper-1
+#| fig-cap: "paper 1"
+#| echo: false #(results shown, code not)
+
+ggplot(data = filter(paper, degree == "master"),
+       mapping = aes(x = printing_location,
+                     fill = printing_decision)) +
+  geom_bar() +
+  labs(x = "xyz",
+       y = "Count",
+       fill = "Usage of color") %>%
+  scale_fill_colorblind()
 
 ```
 
 ```{r}
-glimpse(paper)
+ggplot(data = filter(paper, degree == "bachelor"),
+       mapping = aes(x = printing_location,
+                     fill = printing_decision)) +
+  geom_bar() +
+  labs(x = "xyz",
+       y = "Count",
+       fill = "Usage of color") %>%
+  scale_fill_colorblind()
+```
 
-paper %>%
-  ggplot(data = paper,
-       mapping = aes(x = course,
+In @fig-paper-2 ...
+
+The older, the less people print. Entering master, less printing indeed. but can also have other reason: nnumber of courses, etc.
+
+```{r}
+#| label: fig-paper-2
+#| fig-cap: "paper 2"
+#| echo: false #(results shown, code not)
+
+ggplot(data = filter(paper, course == "Engineering"),
+       mapping = aes(x = age,
                      y = printing_amount,
-                     fill = degree)) +
-  geom_bar(stat = "identity") +
-  scale_fill_manual(values = c("lightblue", "blue"))
+                     color = degree,
+                     shape = degree)) +
+  geom_point(size = 5, alpha = 0.7) +
+  scale_color_manual(values = c("orange", "lightgreen", "grey")) +
+  labs(x = "Age (years)",
+       y = "Number of printed sheets",
+       color = "Degree",
+       shape = "Degree")
+```
 
+```{r}
 
-ggplot(data = paper, 
-       mapping = aes(x = printing_amount, 
-                     y = course, 
-                     fill = degree)) + 
-  geom_col(position = position_dodge()) + 
-  labs(title = "i dont know", 
-       subtitle = "ysss",
-       x = "xsssss", 
-       y = "yssssss", 
-       fill = "degree", 
-       caption = "Data" + 
-  scale_x_continuous(breaks = seq(0, 500, 50)) + 
-  scale_fill_brewer(type = "qual", palette = 3) +
-  theme_minimal() + 
-  theme(panel.grid.minor = element_blank(), 
-        panel.grid.major.y = element_blank())
-
+ggplot(data = filter(paper, course == "Engineering"),
+       mapping = aes(x = lectures_completed,
+                     y = printing_amount,
+                     color = degree,
+                     shape = degree)) +
+  geom_point(size = 5, alpha = 0.7) +
+  scale_color_manual(values = c("orange", "lightgreen", "grey")) +
+  labs(x = "courses",
+       y = "Number of printed sheets",
+       color = "Degree",
+       shape = "Degree")
 ```
 
 # Conclusions

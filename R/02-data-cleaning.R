@@ -46,7 +46,8 @@ clean_data_3 <- clean_data_2[-c(2, 6, 16, 18), ]
 
 #rename_2
 clean_data_4 <- clean_data_3 %>%
-  mutate(notes = recode(notes, "on paper" = "paper"))
+  mutate(notes = recode(notes, "on paper" = "paper"),
+         printing_location = recode(printing_location, "at work" = "work"))
   
 #rename_3
 clean_data_5 <- clean_data_4 %>%
@@ -68,9 +69,11 @@ clean_data_8 <- clean_data_7 %>%
   mutate(semester = as.numeric(semester),
          lectures_completed = as.numeric(lectures_completed))
 
+
 #average_number
 library(dplyr)
 library(stringr)
+
 
 clean_data_9 <- clean_data_8 %>%
   mutate(
