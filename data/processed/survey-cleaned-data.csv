@@ -1,0 +1,126 @@
+id,date,degree,semester,course,age,lectures_completed,device_usage,notes,side_usage,pages_usage,color,color_usage,printing_reason,printing_location,printing_decision,printing_amount
+1,2025-05-19,bachelor,1,Engineering,24,0,laptop,digitally,double-sided,4,black-and-white,tables,exam preparation,university,environmental concerns,0 - 10
+1,2025-05-19,bachelor,1,Engineering,24,0,laptop,digitally,double-sided,4,black-and-white,diagrams,exam preparation,university,environmental concerns,0 - 10
+1,2025-05-19,bachelor,1,Engineering,24,0,laptop,digitally,double-sided,4,black-and-white,cheatsheet for exam,exam preparation,university,environmental concerns,0 - 10
+3,2025-05-19,master,1,Engineering,26,0,tablet,paper,double-sided,1,colors,tables,exam preparation,university,environmental concerns,51 - 100
+3,2025-05-19,master,1,Engineering,26,0,tablet,paper,double-sided,1,colors,tables,exam preparation,copy shop,environmental concerns,51 - 100
+3,2025-05-19,master,1,Engineering,26,0,tablet,paper,double-sided,1,colors,diagrams,exam preparation,university,environmental concerns,51 - 100
+3,2025-05-19,master,1,Engineering,26,0,tablet,paper,double-sided,1,colors,diagrams,exam preparation,copy shop,environmental concerns,51 - 100
+3,2025-05-19,master,1,Engineering,26,0,tablet,paper,double-sided,1,colors,cheatsheet for exam,exam preparation,university,environmental concerns,51 - 100
+3,2025-05-19,master,1,Engineering,26,0,tablet,paper,double-sided,1,colors,cheatsheet for exam,exam preparation,copy shop,environmental concerns,51 - 100
+3,2025-05-19,master,1,Engineering,26,0,tablet,paper,double-sided,1,colors,books,exam preparation,university,environmental concerns,51 - 100
+3,2025-05-19,master,1,Engineering,26,0,tablet,paper,double-sided,1,colors,books,exam preparation,copy shop,environmental concerns,51 - 100
+3,2025-05-19,master,1,Engineering,26,0,tablet,paper,double-sided,1,colors,lecture slides,exam preparation,university,environmental concerns,51 - 100
+3,2025-05-19,master,1,Engineering,26,0,tablet,paper,double-sided,1,colors,lecture slides,exam preparation,copy shop,environmental concerns,51 - 100
+4,2025-05-19,master,2,Engineering,25,5,laptop,paper,double-sided,1,colors,tables,exam preparation,university,convenience,11 - 50
+4,2025-05-19,master,2,Engineering,25,5,laptop,paper,double-sided,1,colors,diagrams,exam preparation,university,convenience,11 - 50
+4,2025-05-19,master,2,Engineering,25,5,laptop,paper,double-sided,1,colors,cheatsheet for exam,exam preparation,university,convenience,11 - 50
+5,2025-05-20,bachelor,2,Engineering,19,6,tablet,digitally,double-sided,4,black-and-white,cheatsheet for exam,annotation,university,convenience,> 500
+5,2025-05-20,bachelor,2,Engineering,19,6,tablet,digitally,double-sided,4,black-and-white,old exams,annotation,university,convenience,> 500
+5,2025-05-20,bachelor,2,Engineering,19,6,tablet,digitally,double-sided,4,black-and-white,notes,annotation,university,convenience,> 500
+5,2025-05-20,bachelor,2,Engineering,19,6,tablet,digitally,double-sided,4,black-and-white,books,annotation,university,convenience,> 500
+5,2025-05-20,bachelor,2,Engineering,19,6,tablet,digitally,double-sided,4,black-and-white,lecture slides,annotation,university,convenience,> 500
+5,2025-05-20,bachelor,2,Engineering,19,6,tablet,digitally,double-sided,4,black-and-white,exercises,annotation,university,convenience,> 500
+7,2025-05-21,master,1,Engineering,25,7,tablet,digitally,double-sided,1,colors,diagrams,exam preparation,home,convenience,0 - 10
+7,2025-05-21,master,1,Engineering,25,7,tablet,digitally,double-sided,1,colors,diagrams,exam preparation,university,convenience,0 - 10
+7,2025-05-21,master,1,Engineering,25,7,tablet,digitally,double-sided,1,colors,cheatsheet for exam,exam preparation,home,convenience,0 - 10
+7,2025-05-21,master,1,Engineering,25,7,tablet,digitally,double-sided,1,colors,cheatsheet for exam,exam preparation,university,convenience,0 - 10
+7,2025-05-21,master,1,Engineering,25,7,tablet,digitally,double-sided,1,colors,notes,exam preparation,home,convenience,0 - 10
+7,2025-05-21,master,1,Engineering,25,7,tablet,digitally,double-sided,1,colors,notes,exam preparation,university,convenience,0 - 10
+7,2025-05-21,master,1,Engineering,25,7,tablet,digitally,double-sided,1,colors,lecture slides,exam preparation,home,convenience,0 - 10
+7,2025-05-21,master,1,Engineering,25,7,tablet,digitally,double-sided,1,colors,lecture slides,exam preparation,university,convenience,0 - 10
+8,2025-05-22,bachelor,8,Engineering,23,3,tablet,digitally,double-sided,1,colors,cheatsheet for exam,exam preparation,university,other,11 - 50
+9,2025-05-22,bachelor,2,Natural Science,36,2,laptop,digitally,double-sided,1,black-and-white,cheatsheet for exam,exam preparation,home,none,51 - 100
+9,2025-05-22,bachelor,2,Natural Science,36,2,laptop,digitally,double-sided,1,black-and-white,cheatsheet for exam,exam preparation,university,none,51 - 100
+9,2025-05-22,bachelor,2,Natural Science,36,2,laptop,digitally,double-sided,1,black-and-white,books,exam preparation,home,none,51 - 100
+9,2025-05-22,bachelor,2,Natural Science,36,2,laptop,digitally,double-sided,1,black-and-white,books,exam preparation,university,none,51 - 100
+9,2025-05-22,bachelor,2,Natural Science,36,2,laptop,digitally,double-sided,1,black-and-white,lecture slides,exam preparation,home,none,51 - 100
+9,2025-05-22,bachelor,2,Natural Science,36,2,laptop,digitally,double-sided,1,black-and-white,lecture slides,exam preparation,university,none,51 - 100
+9,2025-05-22,bachelor,2,Natural Science,36,2,laptop,digitally,double-sided,1,black-and-white,other,exam preparation,home,none,51 - 100
+9,2025-05-22,bachelor,2,Natural Science,36,2,laptop,digitally,double-sided,1,black-and-white,other,exam preparation,university,none,51 - 100
+10,2025-05-22,bachelor,4,Engineering,21,0,laptop,digitally,double-sided,1,black-and-white,tables,exam preparation,university,none,101 - 200
+10,2025-05-22,bachelor,4,Engineering,21,0,laptop,digitally,double-sided,1,black-and-white,tables,exam preparation,copy shop,none,101 - 200
+10,2025-05-22,bachelor,4,Engineering,21,0,laptop,digitally,double-sided,1,black-and-white,diagrams,exam preparation,university,none,101 - 200
+10,2025-05-22,bachelor,4,Engineering,21,0,laptop,digitally,double-sided,1,black-and-white,diagrams,exam preparation,copy shop,none,101 - 200
+10,2025-05-22,bachelor,4,Engineering,21,0,laptop,digitally,double-sided,1,black-and-white,cheatsheet for exam,exam preparation,university,none,101 - 200
+10,2025-05-22,bachelor,4,Engineering,21,0,laptop,digitally,double-sided,1,black-and-white,cheatsheet for exam,exam preparation,copy shop,none,101 - 200
+10,2025-05-22,bachelor,4,Engineering,21,0,laptop,digitally,double-sided,1,black-and-white,notes,exam preparation,university,none,101 - 200
+10,2025-05-22,bachelor,4,Engineering,21,0,laptop,digitally,double-sided,1,black-and-white,notes,exam preparation,copy shop,none,101 - 200
+11,2025-05-22,master,2,Engineering,25,6,laptop,digitally,double-sided,1,black-and-white,cheatsheet for exam,annotation,university,environmental concerns,11 - 50
+12,2025-05-22,master,4,Natural Science,26,2,laptop,paper,double-sided,1,black-and-white,tables,other,university,cost,101 - 200
+12,2025-05-22,master,4,Natural Science,26,2,laptop,paper,double-sided,1,black-and-white,tables,other,university,convenience,101 - 200
+12,2025-05-22,master,4,Natural Science,26,2,laptop,paper,double-sided,1,black-and-white,tables,other,university,environmental concerns,101 - 200
+12,2025-05-22,master,4,Natural Science,26,2,laptop,paper,double-sided,1,black-and-white,diagrams,other,university,cost,101 - 200
+12,2025-05-22,master,4,Natural Science,26,2,laptop,paper,double-sided,1,black-and-white,diagrams,other,university,convenience,101 - 200
+12,2025-05-22,master,4,Natural Science,26,2,laptop,paper,double-sided,1,black-and-white,diagrams,other,university,environmental concerns,101 - 200
+13,2025-05-22,bachelor,8,Other,23,4,laptop,paper,one-sided,1,black-and-white,notes,exam preparation,university,convenience,51 - 100
+14,2025-05-22,bachelor,2,Engineering,21,7,laptop,digitally,double-sided,2,black-and-white,cheatsheet for exam,exam preparation,university,cost,101 - 200
+14,2025-05-22,bachelor,2,Engineering,21,7,laptop,digitally,double-sided,2,black-and-white,cheatsheet for exam,exam preparation,university,convenience,101 - 200
+14,2025-05-22,bachelor,2,Engineering,21,7,laptop,digitally,double-sided,2,black-and-white,cheatsheet for exam,exam preparation,university,environmental concerns,101 - 200
+14,2025-05-22,bachelor,2,Engineering,21,7,laptop,digitally,double-sided,2,black-and-white,notes,exam preparation,university,cost,101 - 200
+14,2025-05-22,bachelor,2,Engineering,21,7,laptop,digitally,double-sided,2,black-and-white,notes,exam preparation,university,convenience,101 - 200
+14,2025-05-22,bachelor,2,Engineering,21,7,laptop,digitally,double-sided,2,black-and-white,notes,exam preparation,university,environmental concerns,101 - 200
+15,2025-05-22,master,6,Medicine,26,1,laptop,paper,double-sided,2,black-and-white,tables,reading comfort,university,convenience,201 - 300
+15,2025-05-22,master,6,Medicine,26,1,laptop,paper,double-sided,2,black-and-white,tables,reading comfort,university,environmental concerns,201 - 300
+15,2025-05-22,master,6,Medicine,26,1,laptop,paper,double-sided,2,black-and-white,diagrams,reading comfort,university,convenience,201 - 300
+15,2025-05-22,master,6,Medicine,26,1,laptop,paper,double-sided,2,black-and-white,diagrams,reading comfort,university,environmental concerns,201 - 300
+15,2025-05-22,master,6,Medicine,26,1,laptop,paper,double-sided,2,black-and-white,cheatsheet for exam,reading comfort,university,convenience,201 - 300
+15,2025-05-22,master,6,Medicine,26,1,laptop,paper,double-sided,2,black-and-white,cheatsheet for exam,reading comfort,university,environmental concerns,201 - 300
+17,2025-05-22,master,1,Economics,24,4,laptop,digitally,double-sided,4,black-and-white,notes,reading comfort,university,none,301 - 400
+17,2025-05-22,master,1,Economics,24,4,laptop,digitally,double-sided,4,black-and-white,research papers,reading comfort,university,none,301 - 400
+19,2025-05-22,master,5,Architecture,26,4,laptop,digitally,one-sided,1,colors,other,other,university,convenience,51 - 100
+20,2025-05-22,bachelor,4,Computer Science,21,6,laptop,digitally,double-sided,1,colors,cheatsheet for exam,exam preparation,university,cost,101 - 200
+20,2025-05-22,bachelor,4,Computer Science,21,6,laptop,digitally,double-sided,1,colors,cheatsheet for exam,exam preparation,university,convenience,101 - 200
+21,2025-05-22,bachelor,2,Natural Science,20,5,laptop,digitally,double-sided,2,black-and-white,tables,exam preparation,university,convenience,401 - 500
+21,2025-05-22,bachelor,2,Natural Science,20,5,laptop,digitally,double-sided,2,black-and-white,tables,exam preparation,university,environmental concerns,401 - 500
+21,2025-05-22,bachelor,2,Natural Science,20,5,laptop,digitally,double-sided,2,black-and-white,tables,exam preparation,at work,convenience,401 - 500
+21,2025-05-22,bachelor,2,Natural Science,20,5,laptop,digitally,double-sided,2,black-and-white,tables,exam preparation,at work,environmental concerns,401 - 500
+21,2025-05-22,bachelor,2,Natural Science,20,5,laptop,digitally,double-sided,2,black-and-white,diagrams,exam preparation,university,convenience,401 - 500
+21,2025-05-22,bachelor,2,Natural Science,20,5,laptop,digitally,double-sided,2,black-and-white,diagrams,exam preparation,university,environmental concerns,401 - 500
+21,2025-05-22,bachelor,2,Natural Science,20,5,laptop,digitally,double-sided,2,black-and-white,diagrams,exam preparation,at work,convenience,401 - 500
+21,2025-05-22,bachelor,2,Natural Science,20,5,laptop,digitally,double-sided,2,black-and-white,diagrams,exam preparation,at work,environmental concerns,401 - 500
+21,2025-05-22,bachelor,2,Natural Science,20,5,laptop,digitally,double-sided,2,black-and-white,cheatsheet for exam,exam preparation,university,convenience,401 - 500
+21,2025-05-22,bachelor,2,Natural Science,20,5,laptop,digitally,double-sided,2,black-and-white,cheatsheet for exam,exam preparation,university,environmental concerns,401 - 500
+21,2025-05-22,bachelor,2,Natural Science,20,5,laptop,digitally,double-sided,2,black-and-white,cheatsheet for exam,exam preparation,at work,convenience,401 - 500
+21,2025-05-22,bachelor,2,Natural Science,20,5,laptop,digitally,double-sided,2,black-and-white,cheatsheet for exam,exam preparation,at work,environmental concerns,401 - 500
+21,2025-05-22,bachelor,2,Natural Science,20,5,laptop,digitally,double-sided,2,black-and-white,old exams,exam preparation,university,convenience,401 - 500
+21,2025-05-22,bachelor,2,Natural Science,20,5,laptop,digitally,double-sided,2,black-and-white,old exams,exam preparation,university,environmental concerns,401 - 500
+21,2025-05-22,bachelor,2,Natural Science,20,5,laptop,digitally,double-sided,2,black-and-white,old exams,exam preparation,at work,convenience,401 - 500
+21,2025-05-22,bachelor,2,Natural Science,20,5,laptop,digitally,double-sided,2,black-and-white,old exams,exam preparation,at work,environmental concerns,401 - 500
+21,2025-05-22,bachelor,2,Natural Science,20,5,laptop,digitally,double-sided,2,black-and-white,notes,exam preparation,university,convenience,401 - 500
+21,2025-05-22,bachelor,2,Natural Science,20,5,laptop,digitally,double-sided,2,black-and-white,notes,exam preparation,university,environmental concerns,401 - 500
+21,2025-05-22,bachelor,2,Natural Science,20,5,laptop,digitally,double-sided,2,black-and-white,notes,exam preparation,at work,convenience,401 - 500
+21,2025-05-22,bachelor,2,Natural Science,20,5,laptop,digitally,double-sided,2,black-and-white,notes,exam preparation,at work,environmental concerns,401 - 500
+21,2025-05-22,bachelor,2,Natural Science,20,5,laptop,digitally,double-sided,2,black-and-white,research papers,exam preparation,university,convenience,401 - 500
+21,2025-05-22,bachelor,2,Natural Science,20,5,laptop,digitally,double-sided,2,black-and-white,research papers,exam preparation,university,environmental concerns,401 - 500
+21,2025-05-22,bachelor,2,Natural Science,20,5,laptop,digitally,double-sided,2,black-and-white,research papers,exam preparation,at work,convenience,401 - 500
+21,2025-05-22,bachelor,2,Natural Science,20,5,laptop,digitally,double-sided,2,black-and-white,research papers,exam preparation,at work,environmental concerns,401 - 500
+21,2025-05-22,bachelor,2,Natural Science,20,5,laptop,digitally,double-sided,2,black-and-white,books,exam preparation,university,convenience,401 - 500
+21,2025-05-22,bachelor,2,Natural Science,20,5,laptop,digitally,double-sided,2,black-and-white,books,exam preparation,university,environmental concerns,401 - 500
+21,2025-05-22,bachelor,2,Natural Science,20,5,laptop,digitally,double-sided,2,black-and-white,books,exam preparation,at work,convenience,401 - 500
+21,2025-05-22,bachelor,2,Natural Science,20,5,laptop,digitally,double-sided,2,black-and-white,books,exam preparation,at work,environmental concerns,401 - 500
+21,2025-05-22,bachelor,2,Natural Science,20,5,laptop,digitally,double-sided,2,black-and-white,lecture slides,exam preparation,university,convenience,401 - 500
+21,2025-05-22,bachelor,2,Natural Science,20,5,laptop,digitally,double-sided,2,black-and-white,lecture slides,exam preparation,university,environmental concerns,401 - 500
+21,2025-05-22,bachelor,2,Natural Science,20,5,laptop,digitally,double-sided,2,black-and-white,lecture slides,exam preparation,at work,convenience,401 - 500
+21,2025-05-22,bachelor,2,Natural Science,20,5,laptop,digitally,double-sided,2,black-and-white,lecture slides,exam preparation,at work,environmental concerns,401 - 500
+21,2025-05-22,bachelor,2,Natural Science,20,5,laptop,digitally,double-sided,2,black-and-white,exercises,exam preparation,university,convenience,401 - 500
+21,2025-05-22,bachelor,2,Natural Science,20,5,laptop,digitally,double-sided,2,black-and-white,exercises,exam preparation,university,environmental concerns,401 - 500
+21,2025-05-22,bachelor,2,Natural Science,20,5,laptop,digitally,double-sided,2,black-and-white,exercises,exam preparation,at work,convenience,401 - 500
+21,2025-05-22,bachelor,2,Natural Science,20,5,laptop,digitally,double-sided,2,black-and-white,exercises,exam preparation,at work,environmental concerns,401 - 500
+22,2025-05-22,master,2,Engineering,25,4,tablet,digitally,double-sided,2,black-and-white,cheatsheet for exam,exam preparation,university,cost,11 - 50
+23,2025-05-22,master,2,Natural Science,24,5,laptop,digitally,double-sided,4,black-and-white,old exams,exam preparation,university,convenience,51 - 100
+24,2025-05-22,bachelor,10,Engineering,24,1,laptop,digitally,one-sided,1,colors,old exams,annotation,home,cost,101 - 200
+24,2025-05-22,bachelor,10,Engineering,24,1,laptop,digitally,one-sided,1,colors,old exams,annotation,home,convenience,101 - 200
+25,2025-05-22,master,6,Engineering,25,3,tablet,digitally,double-sided,2,colors,cheatsheet for exam,exam preparation,copy shop,other,11 - 50
+26,2025-05-22,master,7,Other,25,7,tablet,digitally,double-sided,4,black-and-white,cheatsheet for exam,annotation,university,convenience,201 - 300
+26,2025-05-22,master,7,Other,25,7,tablet,digitally,double-sided,4,black-and-white,old exams,annotation,university,convenience,201 - 300
+26,2025-05-22,master,7,Other,25,7,tablet,digitally,double-sided,4,black-and-white,lecture slides,annotation,university,convenience,201 - 300
+27,2025-05-22,bachelor,6,Engineering,23,5,laptop,paper,double-sided,1,black-and-white,old exams,exam preparation,university,none,101 - 200
+27,2025-05-22,bachelor,6,Engineering,23,5,laptop,paper,double-sided,1,black-and-white,old exams,exam preparation,university,other,101 - 200
+28,2025-05-22,master,5,Marketing,22,4,desktop,digitally,one-sided,1,black-and-white,cheatsheet for exam,exam preparation,home,convenience,51 - 100
+28,2025-05-22,master,5,Marketing,22,4,desktop,digitally,one-sided,1,black-and-white,cheatsheet for exam,exam preparation,university,convenience,51 - 100
+29,2025-05-22,master,2,Natural Science,24,5,laptop,digitally,double-sided,2,black-and-white,old exams,reading comfort,university,environmental concerns,51 - 100
+29,2025-05-22,master,2,Natural Science,24,5,laptop,digitally,double-sided,2,black-and-white,notes,reading comfort,university,environmental concerns,51 - 100
+29,2025-05-22,master,2,Natural Science,24,5,laptop,digitally,double-sided,2,black-and-white,research papers,reading comfort,university,environmental concerns,51 - 100
+30,2025-05-23,bachelor,4,Computer Science,22,7,tablet,digitally,double-sided,1,black-and-white,cheatsheet for exam,exam preparation,university,cost,11 - 50
+30,2025-05-23,bachelor,4,Computer Science,22,7,tablet,digitally,double-sided,1,black-and-white,cheatsheet for exam,exam preparation,university,convenience,11 - 50

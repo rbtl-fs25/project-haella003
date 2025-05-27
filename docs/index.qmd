@@ -1,32 +1,123 @@
 ---
 title: "Capstone Project - Paper Consumption Survey"
-author: "Ella Haechler"
+#subtitle: "Subtitle"
 date: today
+author:
+  - name: "Ella Haechler"
+    orcid: 0009-0007-8251-2702
+    email: haella@ethz.ch
+    affiliation: 
+      - name: ETH Zurich
+        url: https://ethz.ch/de.html
+abstract: This survey is about the research question on how the consumption of paper changes between Bachelor and Master students at ETH.
+license: "CC BY"
+citation: 
+  container-title: Research Beyond the Lab
+  url: https://rbtl-fs25.github.io/website/ # insert website link here
+bibliography: bibliography.bib
+#csl: apa.csl  # other csls https://github.com/citation-style-language/styles
 format:
+#  docx: default
   html:
-    embed-resources: true
     toc: true
+    toc-depth: 4
+    toc-expand: true
+    embed-resources: true
+#    fig-width: 6  
+#    fig-asp: 0.618    # the golden ratio, only adjust fig-asp in chunks where needed
+#    fig-align: center
+#    out-width: "70%"
+
+# global code chunk options are defined:
 execute:
-  warning: false
+  warning: true
+  cache: false   # regularily clear out by knitr::clean_cache()
+
+editor: visual
 editor_options: 
   chunk_output_type: console
-editor: visual
 ---
+
+```{r}
+#| echo: false      #(results shown, code not)
+#| message: false   #(prevents message appearance)
+#| warning: false   #(prevents warning appearance)
+
+library(tidyverse)
+# library(ggplot2) in tidyverse
+# library(dplyr) in tidyverse
+# library(stringr) in tidyverse
+# library(readr) in tidyverse
+library(ggthemes)
+library(ggridges)
+library(readxl)
+library(googlesheets4)
+library(sf) #standardized way to encode spatial vector data
+library(gt) #Presentation-Ready Display Tables
+library(gtsummary) #publication-ready analytical and summary tables using the R programming language
+library(knitr) #general-purpose tool for dynamic report generation in R using Literate Programming techniques.
+library(DT) #Data objects in R can be rendered as HTML tables using the JavaScript library 'DataTables'
+library(lubridate) #tools to make dates parsing and manipulation easier
+
+# datasets: ------------------------------------
+library(gapminder)
+library(palmerpenguins)
+library(rnaturalearth)
+library(nycflights13)
+
+# data
+paper <- read_csv(here::here("data/processed/survey-cleaned-data.csv"))
+```
 
 # Introduction
 
-An anonymous survey was designed to analyze the paper usage patterns of ETH Zurich students, providing insights that may inform future sustainability initiatives on campus. ETH Zurich has more than 20,000 students that are currently enrolled across bachelor’s and master’s programs. As paper consumption remains a relevant topic in the context of sustainability and resource management.
+In recent years, sustainability and resource management have gained importance. Large institutions, including universities, are seeking ways to contribute to a more environmentally friendly future and are actively pursuing new strategies for improvement. Among the various challenges they face, paper consumption stands out as an area with considerable potential for positive change.
 
-```{r}
-# test
-```
+An anonymous survey examined the paper usage habits of ETH students. The study's goal was to investigate the differences in paper consumption between bachelor and master students at ETH. The analysis of these usage patterns will help to develop future strategies that promote a more responsible use of resources at universities.
 
 # Methods
 
-The survey, created using Google Forms, consists of sixteen questions and specifically targets students currently pursuing bachelor’s or master’s degrees at ETH Zurich. A total of 30 responses were collected.
+Data for this study was collected through a survey designed using Google Forms, comprising fifteen questions focused on paper consumption habits. The target population included students currently enrolled in bachelor’s or master’s programs at ETH Zurich. The survey link was distributed to fellow students via WhatsApp. Additional participants were recruited in person by approaching students on campus. In total, thirty responses were gathered for analysis. This approach ensured a mix of convenience and random sampling within the ETH student community.
 
 # Results
+
+```{r}
+glimpse(paper)
+
+paper %>%
+  ggplot(data = paper,
+       mapping = aes(x = course,
+                     y = printing_amount,
+                     fill = degree)) +
+  geom_bar(stat = "identity") +
+  scale_fill_manual(values = c("lightblue", "blue"))
+
+
+ggplot(data = paper, 
+       mapping = aes(x = printing_amount, 
+                     y = course, 
+                     fill = degree)) + 
+  geom_col(position = position_dodge()) + 
+  labs(title = "i dont know", 
+       subtitle = "ysss",
+       x = "xsssss", 
+       y = "yssssss", 
+       fill = "degree", 
+       caption = "Data" + 
+  scale_x_continuous(breaks = seq(0, 500, 50)) + 
+  scale_fill_brewer(type = "qual", palette = 3) +
+  theme_minimal() + 
+  theme(panel.grid.minor = element_blank(), 
+        panel.grid.major.y = element_blank())
+
+```
 
 # Conclusions
 
 # References
+
+@2022longterm
+
+@2023preferring
+
+@sopha2013sustainable

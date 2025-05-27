@@ -2,29 +2,21 @@
 
 ## General information
 
-1.  Title of Dataset:  
+1.  Title of Dataset: Capstone Project - Paper Consumption Survey
 
 2.  Author Information
 
 **Author A**
 
-- First name:
-- Surname:
-- ORCID iD
-- Email:
+- First name: Ella
+- Surname: Haechler
+- ORCID iD: 0009-0007-8251-2702
+- Email: haella@ethz.ch
 
-**Author B**
-
-- First name:
-- Surname:
-- ORCID iD
-- Email:
-
-etc.
 
 3.  Date of data collection (single date, range, approximate date):
 
-4.  Geographic location of data collection:
+4.  Geographic location of data collection: Zurich, Switzerland
 
 5.  Information about funding sources that supported the collection of
     the data: 
