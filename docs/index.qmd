@@ -82,6 +82,22 @@ Data for this study was collected through a survey designed using Google Forms, 
 # Results
 
 ```{r}
+#| label: paper consumption overview
+#| tbl-cap: "xxx"
+
+paper_summarize <- paper |>
+  summarise(
+    count = n(),
+    mean = mean(printing_amount),
+    sd = sd(printing_amount),
+    median = median(printing_amout),
+    min = min(printing_amount),
+    max = max(printing_amount)
+)
+
+```
+
+```{r}
 glimpse(paper)
 
 paper %>%

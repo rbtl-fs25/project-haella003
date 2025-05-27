@@ -66,10 +66,22 @@ clean_data_7 <- clean_data_6 %>%
 #datatype
 clean_data_8 <- clean_data_7 %>%
   mutate(semester = as.numeric(semester),
-         lectures_completed = as.numeric(lectures_completed)) 
+         lectures_completed = as.numeric(lectures_completed))
+
+#average_number
+library(dplyr)
+library(stringr)
+
+clean_data_9 <- clean_data_8 %>%
+  mutate(
+    printing_amount = sapply(
+      str_extract_all(printing_amount, "\\d+"),
+      function(x) round(mean(as.numeric(x)))
+    )
+  )
 
 
-clean_data <- clean_data_8
+clean_data <- clean_data_9
 
 
 glimpse(clean_data)
