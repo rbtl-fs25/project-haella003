@@ -1,4 +1,4 @@
-# spreadsheet
+#spreadsheet
 
 library(tidyverse)
 library(googlesheets4)
@@ -10,7 +10,6 @@ glimpse(survey)
 
 
 # process data
-
 clean_data_1 <- survey |>
   select("date" = "Timestamp",
          "degree" = "Are you enrolled in a bachelor's or master's degree at ETH Zurich?",
@@ -71,9 +70,7 @@ clean_data_8 <- clean_data_7 %>%
 
 
 #average_number
-library(dplyr)
 library(stringr)
-
 
 clean_data_9 <- clean_data_8 %>%
   mutate(
@@ -83,7 +80,7 @@ clean_data_9 <- clean_data_8 %>%
     )
   )
 
-
+#final_data
 clean_data <- clean_data_9
 
 
@@ -97,6 +94,5 @@ write_rds(data_out, "data/processed/survey-cleaned-data.rds")
 
 
 #dictionary
-
 dictionary <- read_sheet("https://docs.google.com/spreadsheets/d/11O0w2RbF1AtFiIvma9daU8_FgiW7mJ38iymM49iDVhg/edit?gid=567079855#gid=567079855")
 write_csv(dictionary, "data/processed/dictionary.csv")

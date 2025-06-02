@@ -1,0 +1,49 @@
+id,date,degree,semester,course,age,lectures_completed,device_usage,notes,side_usage,pages_usage,color,color_usage,printing_reason,printing_location,printing_decision,printing_amount
+3,2025-05-19,master,1,Engineering,26,0,tablet,paper,double-sided,1,colors,tables,exam preparation,university,environmental concerns,76
+3,2025-05-19,master,1,Engineering,26,0,tablet,paper,double-sided,1,colors,tables,exam preparation,copy shop,environmental concerns,76
+3,2025-05-19,master,1,Engineering,26,0,tablet,paper,double-sided,1,colors,diagrams,exam preparation,university,environmental concerns,76
+3,2025-05-19,master,1,Engineering,26,0,tablet,paper,double-sided,1,colors,diagrams,exam preparation,copy shop,environmental concerns,76
+3,2025-05-19,master,1,Engineering,26,0,tablet,paper,double-sided,1,colors,cheatsheet for exam,exam preparation,university,environmental concerns,76
+3,2025-05-19,master,1,Engineering,26,0,tablet,paper,double-sided,1,colors,cheatsheet for exam,exam preparation,copy shop,environmental concerns,76
+3,2025-05-19,master,1,Engineering,26,0,tablet,paper,double-sided,1,colors,books,exam preparation,university,environmental concerns,76
+3,2025-05-19,master,1,Engineering,26,0,tablet,paper,double-sided,1,colors,books,exam preparation,copy shop,environmental concerns,76
+3,2025-05-19,master,1,Engineering,26,0,tablet,paper,double-sided,1,colors,lecture slides,exam preparation,university,environmental concerns,76
+3,2025-05-19,master,1,Engineering,26,0,tablet,paper,double-sided,1,colors,lecture slides,exam preparation,copy shop,environmental concerns,76
+4,2025-05-19,master,2,Engineering,25,5,laptop,paper,double-sided,1,colors,tables,exam preparation,university,convenience,30
+4,2025-05-19,master,2,Engineering,25,5,laptop,paper,double-sided,1,colors,diagrams,exam preparation,university,convenience,30
+4,2025-05-19,master,2,Engineering,25,5,laptop,paper,double-sided,1,colors,cheatsheet for exam,exam preparation,university,convenience,30
+7,2025-05-21,master,1,Engineering,25,7,tablet,digitally,double-sided,1,colors,diagrams,exam preparation,home,convenience,5
+7,2025-05-21,master,1,Engineering,25,7,tablet,digitally,double-sided,1,colors,diagrams,exam preparation,university,convenience,5
+7,2025-05-21,master,1,Engineering,25,7,tablet,digitally,double-sided,1,colors,cheatsheet for exam,exam preparation,home,convenience,5
+7,2025-05-21,master,1,Engineering,25,7,tablet,digitally,double-sided,1,colors,cheatsheet for exam,exam preparation,university,convenience,5
+7,2025-05-21,master,1,Engineering,25,7,tablet,digitally,double-sided,1,colors,notes,exam preparation,home,convenience,5
+7,2025-05-21,master,1,Engineering,25,7,tablet,digitally,double-sided,1,colors,notes,exam preparation,university,convenience,5
+7,2025-05-21,master,1,Engineering,25,7,tablet,digitally,double-sided,1,colors,lecture slides,exam preparation,home,convenience,5
+7,2025-05-21,master,1,Engineering,25,7,tablet,digitally,double-sided,1,colors,lecture slides,exam preparation,university,convenience,5
+11,2025-05-22,master,2,Engineering,25,6,laptop,digitally,double-sided,1,black-and-white,cheatsheet for exam,annotation,university,environmental concerns,30
+12,2025-05-22,master,4,Natural Science,26,2,laptop,paper,double-sided,1,black-and-white,tables,other,university,cost,150
+12,2025-05-22,master,4,Natural Science,26,2,laptop,paper,double-sided,1,black-and-white,tables,other,university,convenience,150
+12,2025-05-22,master,4,Natural Science,26,2,laptop,paper,double-sided,1,black-and-white,tables,other,university,environmental concerns,150
+12,2025-05-22,master,4,Natural Science,26,2,laptop,paper,double-sided,1,black-and-white,diagrams,other,university,cost,150
+12,2025-05-22,master,4,Natural Science,26,2,laptop,paper,double-sided,1,black-and-white,diagrams,other,university,convenience,150
+12,2025-05-22,master,4,Natural Science,26,2,laptop,paper,double-sided,1,black-and-white,diagrams,other,university,environmental concerns,150
+15,2025-05-22,master,6,Medicine,26,1,laptop,paper,double-sided,2,black-and-white,tables,reading comfort,university,convenience,250
+15,2025-05-22,master,6,Medicine,26,1,laptop,paper,double-sided,2,black-and-white,tables,reading comfort,university,environmental concerns,250
+15,2025-05-22,master,6,Medicine,26,1,laptop,paper,double-sided,2,black-and-white,diagrams,reading comfort,university,convenience,250
+15,2025-05-22,master,6,Medicine,26,1,laptop,paper,double-sided,2,black-and-white,diagrams,reading comfort,university,environmental concerns,250
+15,2025-05-22,master,6,Medicine,26,1,laptop,paper,double-sided,2,black-and-white,cheatsheet for exam,reading comfort,university,convenience,250
+15,2025-05-22,master,6,Medicine,26,1,laptop,paper,double-sided,2,black-and-white,cheatsheet for exam,reading comfort,university,environmental concerns,250
+17,2025-05-22,master,1,Economics,24,4,laptop,digitally,double-sided,4,black-and-white,notes,reading comfort,university,none,350
+17,2025-05-22,master,1,Economics,24,4,laptop,digitally,double-sided,4,black-and-white,research papers,reading comfort,university,none,350
+19,2025-05-22,master,5,Architecture,26,4,laptop,digitally,one-sided,1,colors,other,other,university,convenience,76
+22,2025-05-22,master,2,Engineering,25,4,tablet,digitally,double-sided,2,black-and-white,cheatsheet for exam,exam preparation,university,cost,30
+23,2025-05-22,master,2,Natural Science,24,5,laptop,digitally,double-sided,4,black-and-white,old exams,exam preparation,university,convenience,76
+25,2025-05-22,master,6,Engineering,25,3,tablet,digitally,double-sided,2,colors,cheatsheet for exam,exam preparation,copy shop,other,30
+26,2025-05-22,master,7,Other,25,7,tablet,digitally,double-sided,4,black-and-white,cheatsheet for exam,annotation,university,convenience,250
+26,2025-05-22,master,7,Other,25,7,tablet,digitally,double-sided,4,black-and-white,old exams,annotation,university,convenience,250
+26,2025-05-22,master,7,Other,25,7,tablet,digitally,double-sided,4,black-and-white,lecture slides,annotation,university,convenience,250
+28,2025-05-22,master,5,Marketing,22,4,desktop,digitally,one-sided,1,black-and-white,cheatsheet for exam,exam preparation,home,convenience,76
+28,2025-05-22,master,5,Marketing,22,4,desktop,digitally,one-sided,1,black-and-white,cheatsheet for exam,exam preparation,university,convenience,76
+29,2025-05-22,master,2,Natural Science,24,5,laptop,digitally,double-sided,2,black-and-white,old exams,reading comfort,university,environmental concerns,76
+29,2025-05-22,master,2,Natural Science,24,5,laptop,digitally,double-sided,2,black-and-white,notes,reading comfort,university,environmental concerns,76
+29,2025-05-22,master,2,Natural Science,24,5,laptop,digitally,double-sided,2,black-and-white,research papers,reading comfort,university,environmental concerns,76
