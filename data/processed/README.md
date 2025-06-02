@@ -4,7 +4,7 @@
 
 1.  Title of Dataset: Capstone Project - Paper Consumption Analysis
 
-2.  Author Information: Ella Haechler
+2.  Author Information:
 
 **Author A**
 
@@ -25,13 +25,13 @@
 
 1.  Licenses/restrictions placed on the data: This work is licensed under the Creative Commons Attribution 4.0 International license (CC-BY-4.0).
 
-2.  Links to publications that cite or use the data: -
+2.  Links to publications that cite or use the data: none
 
-3.  Links to other publicly accessible locations of the data: -
+3.  Links to other publicly accessible locations of the data: none
 
-4.  Links/relationships to ancillary data sets: -
+4.  Links/relationships to ancillary data sets: none
 
-5.  Was data derived from another source? -
+5.  Was data derived from another source? none
 
 ## Methodological information
 
@@ -40,14 +40,14 @@
 2.  Methods for processing the data: approaching students at ETH Zurich and ask them to fill out the survey
 
 3.  Instrument- or software-specific information needed to interpret the
-    data: -
+    data: none
 
-4.  Standards and calibration information, if appropriate: -
+4.  Standards and calibration information, if appropriate: none
 
-5.  Environmental/experimental conditions: -
+5.  Environmental/experimental conditions: none
 
-6.  Describe any quality-assurance procedures performed on the data: -
+6.  Describe any quality-assurance procedures performed on the data: none
 
 7.  People involved with sample collection, processing, analysis and/or
-    submission: -
+    submission: Lars Schöbitz
 

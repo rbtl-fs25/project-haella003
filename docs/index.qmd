@@ -15,7 +15,7 @@ citation:
   container-title: Research Beyond the Lab
   url: https://rbtl-fs25.github.io/website/ # insert website link here
 bibliography: bibliography.bib
-#csl: apa.csl  # other csls https://github.com/citation-style-language/styles
+csl: apa.csl  # other csls https://github.com/citation-style-language/styles
 format:
 #  docx: default
   html:
@@ -44,10 +44,10 @@ editor_options:
 #| warning: false   #(prevents warning appearance)
 
 library(tidyverse)
-# library(ggplot2) in tidyverse
-# library(dplyr) in tidyverse
-# library(stringr) in tidyverse
-# library(readr) in tidyverse
+library(ggplot2) #in tidyverse
+library(dplyr) #in tidyverse
+library(stringr) #in tidyverse
+library(readr) #in tidyverse
 library(ggthemes)
 library(ggridges)
 library(readxl)
@@ -71,7 +71,7 @@ paper <- read_csv(here::here("data/processed/survey-cleaned-data.csv"))
 
 # Introduction
 
-In recent years, sustainability and resource management have gained importance. Large institutions, including universities, are seeking ways to contribute to a more environmentally friendly future and are actively pursuing new strategies for improvement. Among the various challenges they face, paper consumption stands out as an area with considerable potential for positive change.
+In recent years, sustainability and resource management have gained importance. Large institutions, including universities, are seeking ways to contribute to a more environmentally friendly future and are actively pursuing new strategies for improvement [@2023preferring]. Among the various challenges they face, paper consumption stands out as an area with considerable potential for positive change.
 
 An anonymous survey examined the paper usage habits of ETH students. The study's goal was to investigate the differences in paper consumption between bachelor and master students at ETH. The analysis of these usage patterns will help to develop future strategies that promote a more responsible use of resources at universities.
 
