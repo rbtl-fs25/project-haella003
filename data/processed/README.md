@@ -19,19 +19,19 @@
 4.  Geographic location of data collection: Zurich, Switzerland
 
 5.  Information about funding sources that supported the collection of
-    the data: none
+    the data: NA
 
 ## Sharing / access information
 
 1.  Licenses/restrictions placed on the data: This work is licensed under the Creative Commons Attribution 4.0 International license (CC-BY-4.0).
 
-2.  Links to publications that cite or use the data: none
+2.  Links to publications that cite or use the data: NA
 
-3.  Links to other publicly accessible locations of the data: none
+3.  Links to other publicly accessible locations of the data: NA
 
-4.  Links/relationships to ancillary data sets: none
+4.  Links/relationships to ancillary data sets: NA
 
-5.  Was data derived from another source? none
+5.  Was data derived from another source? No
 
 ## Methodological information
 
@@ -40,13 +40,13 @@
 2.  Methods for processing the data: approaching students at ETH Zurich and ask them to fill out the survey
 
 3.  Instrument- or software-specific information needed to interpret the
-    data: none
+    data: NA
 
-4.  Standards and calibration information, if appropriate: none
+4.  Standards and calibration information, if appropriate: NA
 
-5.  Environmental/experimental conditions: none
+5.  Environmental/experimental conditions: NA
 
-6.  Describe any quality-assurance procedures performed on the data: none
+6.  Describe any quality-assurance procedures performed on the data: NA
 
 7.  People involved with sample collection, processing, analysis and/or
     submission: Lars Schöbitz

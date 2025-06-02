@@ -1,11 +1,11 @@
 ---
-title: "Capstone Project - Paper Consumption Survey"
-#subtitle: "Subtitle"
+title: "Paper Consumption at ETH Zurich"
+subtitle: "Capstone Project"
 date: today
 author:
   - name: "Ella Haechler"
     orcid: 0009-0007-8251-2702
-    email: haella@ethz.ch
+    email: haella@student.ethz.ch
     affiliation: 
       - name: ETH Zurich
         url: https://ethz.ch/de.html
@@ -71,9 +71,9 @@ paper <- read_csv(here::here("data/processed/survey-cleaned-data.csv"))
 
 # Introduction
 
-In recent years, sustainability and resource management have gained importance. Large institutions, including universities, are seeking ways to contribute to a more environmentally friendly future and are actively pursuing new strategies for improvement [@2023preferring]. Among the various challenges they face, paper consumption stands out as an area with considerable potential for positive change.
+In recent years, sustainability and resource management have gained importance. Large institutions, including universities, are seeking ways to contribute to a more environmentally friendly future and are actively pursuing new strategies for improvement [@2023preferring]. Among the various challenges they face, paper consumption stands out as an area with considerable potential for positive change [@2022longterm].
 
-An anonymous survey examined the paper usage habits of ETH students. The study's goal was to investigate the differences in paper consumption between bachelor and master students at ETH. The analysis of these usage patterns will help to develop future strategies that promote a more responsible use of resources at universities.
+An anonymous survey examined the paper usage habits of ETH students. The study's goal was to investigate the differences in paper consumption between bachelor and master students at ETH. The analysis of these usage patterns will help to develop future strategies that promote a more responsible use of resources at universities [@henderson2015students].
 
 # Methods
 
@@ -81,7 +81,7 @@ Data for this study was collected through a survey designed using Google Forms, 
 
 # Results
 
-In the following @tbl-paper-consumption-overview-degree an overview about the basic information collected in the survey is given.
+In the following @tbl-paper-consumption-overview-degree an overview about the basic information collected in the survey is given. Not only did bachelor students consume more paper on average than master students, but their consumption also varied more, as reflected in the higher standard deviation and a significantly higher median. In contrast, master students exhibited both lower average consumption and lower variability. These results suggest that paper consumption tends to decrease and become more constant during the transition from bachelor to master studies.
 
 ```{r}
 #| label: tbl-paper-consumption-overview-degree
@@ -96,8 +96,9 @@ paper |>
     Median = median(printing_amount, na.rm = TRUE),
     Min = min(printing_amount, na.rm = TRUE),
     Max = max(printing_amount, na.rm = TRUE),
-    n = n()
-  ) |>
+    n = n(),
+    page_usage_per_person = round(Mean / n, digits = 2)
+    ) |>
   ungroup() %>%
   gt() |> 
   fmt_number(columns = c(Mean, sd, Median, Min, Max),
@@ -109,42 +110,47 @@ paper |>
 
 ```
 
-@fig-paper-1 shows ...
+@fig-paper-1 displays the distribution of printing locations among bachelor students, with bars representing the count of students for each location, differentiated by their printing decision. The most frequently selected printing location was the university, while other locations such as the copy shop or home were chosen less often. @fig-paper-2 demonstrated the same information for master students. The university is also the most chosen location for printing, where at work is not even displayed and therefore is not a commonly used place to print. The plot also shows the variation in printing decisions (as indicated by the color fill) across different locations. These results provide a clear overview of where bachelor students most commonly print and how their printing decisions vary by location.
+
+Both degree levels most frequently based their printing decision on factors such as convenience or environmental aspects. This pattern suggests that these two considerations significantly influenced the printing behavior of the surveyed population. Cost also plays a role, but is not as significant as expected. It's also interesting to note that bachelor's students print while working, whereas master's students do not. One might expect the opposite, given that master's students have a higher workload than bachelor's students. One reason for this could be that bachelor's students print more pages overall.Further conclusions cannot be drawn due to a lack of information such as explanations for the printing decision none and other.
 
 ```{r}
 #| label: fig-paper-1
-#| fig-cap: "paper 1"
+#| fig-cap: "Relationship between printing decisions and location choice of bachelor students"
+#| echo: false #(results shown, code not)
+
+ggplot(data = filter(paper, degree == "bachelor"),
+       mapping = aes(x = printing_location,
+                     fill = printing_decision)) +
+  geom_bar() +
+  labs(x = "Printing location",
+       y = "Count",
+       fill = "Printing decision") +
+  scale_fill_colorblind()
+
+```
+
+```{r}
+#| label: fig-paper-2
+#| fig-cap: "Relationship between printing decisions and location choice of master students"
 #| echo: false #(results shown, code not)
 
 ggplot(data = filter(paper, degree == "master"),
        mapping = aes(x = printing_location,
                      fill = printing_decision)) +
   geom_bar() +
-  labs(x = "xyz",
+  labs(x = "Printing location",
        y = "Count",
-       fill = "Usage of color") %>%
-  scale_fill_colorblind()
-
+       fill = "Printing decision") +
+  scale_fill_colorblind() +
+  coord_cartesian(ylim = c(0, 50))
 ```
 
-```{r}
-ggplot(data = filter(paper, degree == "bachelor"),
-       mapping = aes(x = printing_location,
-                     fill = printing_decision)) +
-  geom_bar() +
-  labs(x = "xyz",
-       y = "Count",
-       fill = "Usage of color") %>%
-  scale_fill_colorblind()
-```
-
-In @fig-paper-2 ...
-
-The older, the less people print. Entering master, less printing indeed. but can also have other reason: nnumber of courses, etc.
+@fig-paper-3 shows the relationship between age and the number of pages printed among engineering students, with data points differentiated by degree level. The graph highlights the variability in print volume between age groups and between undergraduate and graduate students. Master's students, who are also generally older, print fewer documents than undergraduate students. This trend could also be influenced by other factors, such as a reduced number of required courses or changes in the academic workload during the master's program. Among undergraduate students, a trend toward less printing with increasing age is evident. However, no clear linear trend is evident, suggesting that age alone is not a strong predictor of paper consumption in this group.
 
 ```{r}
-#| label: fig-paper-2
-#| fig-cap: "paper 2"
+#| label: fig-paper-3
+#| fig-cap: "Relationship between age and amount of printed papers"
 #| echo: false #(results shown, code not)
 
 ggplot(data = filter(paper, course == "Engineering"),
@@ -160,27 +166,21 @@ ggplot(data = filter(paper, course == "Engineering"),
        shape = "Degree")
 ```
 
-```{r}
-
-ggplot(data = filter(paper, course == "Engineering"),
-       mapping = aes(x = lectures_completed,
-                     y = printing_amount,
-                     color = degree,
-                     shape = degree)) +
-  geom_point(size = 5, alpha = 0.7) +
-  scale_color_manual(values = c("orange", "lightgreen", "grey")) +
-  labs(x = "courses",
-       y = "Number of printed sheets",
-       color = "Degree",
-       shape = "Degree")
-```
-
 # Conclusions
 
+-   Survey results show that bachelor students use more paper and display greater variability in their printing habits compared to master students.
+
+```{=html}
+<!-- -->
+```
+-   Paper consumption tends to decrease and become more consistent as students progress from bachelor to master studies, possibly due to changes in academic workload and course requirements.
+
+-   The university is the most common printing location for both groups.
+
+-   Both bachelor’s and master’s students primarily base their printing decisions on convenience and environmental considerations, with cost playing a secondary role.
+
+-   No strong correlation was found between age and paper usage, suggesting that factors other than age, such as degree level and individual preferences, are more influential in determining printing behavior.
+
+-   Further research with a larger and more diverse sample could provide deeper insights into the motivations behind students’ printing decisions and inform more effective sustainability initiatives.
+
 # References
-
-@2022longterm
-
-@2023preferring
-
-@sopha2013sustainable
