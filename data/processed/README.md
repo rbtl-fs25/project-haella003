@@ -11,7 +11,7 @@
 - First name: Ella
 - Surname: Haechler
 - ORCID iD: 0009-0007-8251-2702
-- Email: haella@ethz.ch
+- Email: haella@student.ethz.ch
 
 
 3.  Date of data collection (single date, range, approximate date): May, 2025
@@ -35,7 +35,7 @@
 
 ## Methodological information
 
-1.  Description of methods used for collection/generation of data: google survey
+1.  Description of methods used for collection/generation of data: Data for this study was collected through a survey designed using Google Forms, comprising fifteen questions focused on paper consumption habits. The target population included students currently enrolled in bachelor’s or master’s programs at ETH Zurich. The survey link was distributed to fellow students via WhatsApp. Additional participants were recruited in person by approaching students on campus. In total, thirty responses were gathered for analysis. This approach ensured a mix of convenience and random sampling within the ETH student community.
 
 2.  Methods for processing the data: approaching students at ETH Zurich and ask them to fill out the survey
 
